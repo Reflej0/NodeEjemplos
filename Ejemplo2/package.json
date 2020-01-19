@@ -1,0 +1,39 @@
+{
+    "name": "example",
+    "version": "2.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "cross-env NODE_ENV=production node app.js",
+        "dev": "cross-env NODE_ENV=development nodemon app.js",
+        "debug": "cross-env DEBUG=* node --inspect app.js",
+        "release": "standard-version"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@jwt/config": "file:config",
+        "@jwt/utils": "file:utils",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.18.3",
+        "connect-mongo": "^2.0.1",
+        "cors": "^2.8.5",
+        "cross-env": "^5.1.6",
+        "express": "^4.16.4",
+        "express-session": "^1.15.6",
+        "is-empty": "^1.2.0",
+        "jsonwebtoken": "^8.3.0",
+        "mongoose": "^5.4.10",
+        "mongoose-unique-validator": "^2.0.3",
+        "passport": "^0.4.0",
+        "passport-jwt": "^4.0.0",
+        "restify": "^4.3.0",
+        "restify-cookies": "^0.2.2",
+        "standard-version": "^6.0.1",
+        "validator": "^10.5.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.3"
+    }
+}
